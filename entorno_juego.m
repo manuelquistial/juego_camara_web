@@ -1,4 +1,4 @@
-function [posx,posy,puntuacion] = entorno_juego(Video, posx, posy, puntuacion)
+function [posx,posy] = entorno_juego(Video, posx, posy)
 
 existe1 = 0;
 existe2 = 0;
@@ -6,10 +6,10 @@ existe3 = 0;
 existe4 = 0;
 bandera = 1;
 salir = 0;
+puntuacion = 0;
 font_size = 12;
 color = [220 220 220]/255;
 font_name = 'Bauhaus 93';
-text(20,250,'Vidas: ', 'FontSize', font_size, 'Color', color, 'FontName', font_name);
 text(220,250,'Puntos: ', 'FontSize', font_size, 'Color', color, 'FontName', font_name);
 
 %% Se configuran los parametros del fondo
